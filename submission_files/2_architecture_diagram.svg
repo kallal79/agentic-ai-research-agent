@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 26px; font-weight: 700; fill: #0f172a; }
+      .subtitle { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 14px; fill: #64748b; }
+      .card { fill: #ffffff; stroke: #e2e8f0; stroke-width: 1.5; rx: 10; ry: 10; }
+      .card-highlight { fill: #ffffff; stroke: #3b82f6; stroke-width: 2; rx: 10; ry: 10; }
+      .card-recovery { fill: #fffbeb; stroke: #f59e0b; stroke-width: 2; rx: 10; ry: 10; }
+      .card-tools { fill: #f0fdf4; stroke: #10b981; stroke-width: 1.5; rx: 8; ry: 8; }
+      .header-text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; font-weight: 600; fill: #1e293b; }
+      .body-text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 12px; fill: #475569; }
+      .badge-text { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 11px; font-weight: 600; }
+      .arrow { stroke: #64748b; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+      .arrow-err { stroke: #f59e0b; stroke-width: 2; stroke-dasharray: 4,4; fill: none; marker-end: url(#arrowhead-amber); }
+      .arrow-data { stroke: #3b82f6; stroke-width: 2; fill: none; marker-end: url(#arrowhead-blue); }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#3b82f6" />
+    </marker>
+    <marker id="arrowhead-amber" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#f59e0b" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" class="bg" />
+
+  <!-- Header -->
+  <text x="60" y="55" class="title">Agentic AI Research Agent — System Architecture</text>
+  <text x="60" y="80" class="subtitle">Autonomous Goal Decomposition • Multi-Tool Pipeline • 3-Tier Self-Correction • Structured Audit Reporting</text>
+
+  <!-- Step 1: User Goal Input -->
+  <g transform="translate(60, 110)">
+    <rect width="240" height="90" class="card" />
+    <rect x="15" y="15" width="80" height="20" rx="4" fill="#eff6ff" />
+    <text x="22" y="29" class="badge-text" fill="#2563eb">USER INPUT</text>
+    <text x="15" y="55" class="header-text">High-Level Goal</text>
+    <text x="15" y="75" class="body-text">CLI input / Natural language prompt</text>
+  </g>
+
+  <!-- Arrow to Orchestrator -->
+  <path d="M 300 155 L 360 155" class="arrow" />
+
+  <!-- Step 2: Orchestrator -->
+  <g transform="translate(360, 110)">
+    <rect width="250" height="90" class="card-highlight" />
+    <rect x="15" y="15" width="105" height="20" rx="4" fill="#eff6ff" />
+    <text x="22" y="29" class="badge-text" fill="#2563eb">COORDINATOR</text>
+    <text x="15" y="55" class="header-text">AgentOrchestrator</text>
+    <text x="15" y="75" class="body-text">Lifecycle &amp; Phase Control</text>
+  </g>
+
+  <!-- Arrow to Planner -->
+  <path d="M 485 200 L 485 240" class="arrow" />
+
+  <!-- Step 3: Planner -->
+  <g transform="translate(330, 240)">
+    <rect width="310" height="130" class="card" />
+    <rect x="15" y="15" width="115" height="20" rx="4" fill="#fdf2f8" />
+    <text x="22" y="29" class="badge-text" fill="#db2777">PHASE 1: PLANNING</text>
+    <text x="15" y="55" class="header-text">Goal Decomposition &amp; Planner</text>
+    <text x="15" y="75" class="body-text">• Intent Classifier (Research, Competitive, Travel)</text>
+    <text x="15" y="95" class="body-text">• Dynamic Topic &amp; Parameter Extraction</text>
+    <text x="15" y="115" class="body-text">• Step Sequence &amp; Fallback Mapping</text>
+  </g>
+
+  <!-- Arrow to Executor -->
+  <path d="M 485 370 L 485 410" class="arrow" />
+
+  <!-- Step 4: Execution Engine -->
+  <g transform="translate(280, 410)">
+    <rect width="410" height="160" class="card-highlight" />
+    <rect x="15" y="15" width="130" height="20" rx="4" fill="#eff6ff" />
+    <text x="22" y="29" class="badge-text" fill="#2563eb">PHASE 2: EXECUTION</text>
+    <text x="15" y="55" class="header-text">Step Execution Engine</text>
+    <text x="15" y="75" class="body-text">• Step-by-Step Dispatch via Uniform BaseTool Interface</text>
+    <text x="15" y="95" class="body-text">• Context Buffer: Pipes text &amp; data across steps</text>
+    <text x="15" y="115" class="body-text">• Dynamic Input Resolution (Compression ratio, math)</text>
+    <text x="15" y="135" class="body-text">• Structured Result Capture (duration, status, payload)</text>
+  </g>
+
+  <!-- Arrow to Tools (Right) -->
+  <path d="M 690 470 L 760 470" class="arrow-data" />
+
+  <!-- Step 5: Tool Suite (Right Panel) -->
+  <g transform="translate(760, 290)">
+    <rect width="380" height="340" class="card" />
+    <rect x="15" y="15" width="95" height="20" rx="4" fill="#ecfdf5" />
+    <text x="22" y="29" class="badge-text" fill="#059669">TOOL SUITE</text>
+    <text x="15" y="55" class="header-text">Distinct Autonomous Tools</text>
+
+    <!-- Tool 1: Web Search -->
+    <g transform="translate(15, 70)">
+      <rect width="350" height="55" class="card-tools" />
+      <text x="12" y="22" class="header-text" style="font-size:13px;">WebSearchTool (DuckDuckGo)</text>
+      <text x="12" y="40" class="body-text">Live web queries + deliberate timeout injection mode</text>
+    </g>
+
+    <!-- Tool 2: Wikipedia -->
+    <g transform="translate(15, 135)">
+      <rect width="350" height="55" class="card-tools" />
+      <text x="12" y="22" class="header-text" style="font-size:13px;">WikipediaTool (MediaWiki REST / API)</text>
+      <text x="12" y="40" class="body-text">Article extracts, categories &amp; rate-limit fallback</text>
+    </g>
+
+    <!-- Tool 3: Calculator -->
+    <g transform="translate(15, 200)">
+      <rect width="350" height="55" class="card-tools" />
+      <text x="12" y="22" class="header-text" style="font-size:13px;">CalculatorTool (AST-Safe Math)</text>
+      <text x="12" y="40" class="body-text">Safe math evaluation via ast.parse (no arbitrary eval)</text>
+    </g>
+
+    <!-- Tool 4: Summarizer -->
+    <g transform="translate(15, 265)">
+      <rect width="350" height="55" class="card-tools" />
+      <text x="12" y="22" class="header-text" style="font-size:13px;">TextSummarizerTool (Extractive)</text>
+      <text x="12" y="40" class="body-text">Word-frequency scoring &amp; key term extraction</text>
+    </g>
+  </g>
+
+  <!-- Arrow to Error Handler (Left) -->
+  <path d="M 280 500 L 210 500" class="arrow-err" />
+
+  <!-- Step 6: 3-Tier Self-Correction (Left Panel) -->
+  <g transform="translate(40, 420)">
+    <rect width="220" height="190" class="card-recovery" />
+    <rect x="15" y="15" width="130" height="20" rx="4" fill="#fef3c7" />
+    <text x="22" y="29" class="badge-text" fill="#d97706">SELF-CORRECTION</text>
+    <text x="15" y="55" class="header-text" style="font-size:14px;">ErrorHandler Engine</text>
+    <text x="15" y="80" class="body-text">• Tier 1: Retry (max 2 tries)</text>
+    <text x="15" y="105" class="body-text">• Tier 2: Fallback Tool</text>
+    <text x="15" y="125" class="body-text">  (e.g., search → wikipedia)</text>
+    <text x="15" y="150" class="body-text">• Tier 3: Graceful Skip</text>
+    <text x="15" y="170" class="body-text">• Full Audit Logging</text>
+  </g>
+
+  <!-- Arrow from Executor to Report Builder -->
+  <path d="M 485 570 L 485 620" class="arrow" />
+
+  <!-- Step 7: Report Builder -->
+  <g transform="translate(300, 620)">
+    <rect width="370" height="130" class="card" />
+    <rect x="15" y="15" width="125" height="20" rx="4" fill="#f1f5f9" />
+    <text x="22" y="29" class="badge-text" fill="#475569">PHASE 3: REPORTING</text>
+    <text x="15" y="55" class="header-text">Structured Report Builder</text>
+    <text x="15" y="78" class="body-text">• Markdown Output: Formatted overview, steps &amp; stats</text>
+    <text x="15" y="98" class="body-text">• JSON Output: Machine-readable audit &amp; error traces</text>
+    <text x="15" y="118" class="body-text">• Saved to output/ with timestamped identifiers</text>
+  </g>
+
+</svg>
