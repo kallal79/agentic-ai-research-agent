@@ -40,7 +40,7 @@ class WikipediaTool(BaseTool):
         # Strategy 1: use the wikipedia-api library
         try:
             return self._via_wikipediaapi(topic, sentences)
-        except ImportError:
+        except Exception:
             pass
 
         # Strategy 2: raw REST call to MediaWiki

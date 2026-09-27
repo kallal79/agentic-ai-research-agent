@@ -76,27 +76,27 @@ def setup_logging(verbose: bool = False) -> None:
 
 
 def print_banner() -> None:
-    """Print a stylish banner."""
+    """Print the project banner."""
     if RICH_AVAILABLE:
         console = Console()
         banner = Text()
-        banner.append("🤖 AGENTIC AI RESEARCH AGENT", style="bold cyan")
-        banner.append("\n   Autonomous Planning • Tool Use • Self-Correction", style="dim")
-        banner.append("\n   v1.0 — Take-Home Assignment", style="dim italic")
-        console.print(Panel(banner, box=box.DOUBLE_EDGE, border_style="cyan", padding=(1, 2)))
+        banner.append("Agentic AI Research Agent", style="bold cyan")
+        banner.append("\nAutonomous Planning | Tool Execution | Error Recovery", style="dim")
+        banner.append("\nTake-Home Assignment", style="dim italic")
+        console.print(Panel(banner, box=box.ROUNDED, border_style="cyan", padding=(1, 2)))
     else:
         print("=" * 60)
-        print("  🤖 AGENTIC AI RESEARCH AGENT")
-        print("  Autonomous Planning • Tool Use • Self-Correction")
-        print("  v1.0 — Take-Home Assignment")
+        print("  Agentic AI Research Agent")
+        print("  Autonomous Planning | Tool Execution | Error Recovery")
+        print("  Take-Home Assignment")
         print("=" * 60)
 
 
 def print_plan(plan: list, console=None) -> None:
-    """Display the plan in a nice table."""
+    """Display the plan in a clean table."""
     if RICH_AVAILABLE and console:
         table = Table(
-            title="📋 Execution Plan",
+            title="Execution Plan",
             box=box.ROUNDED,
             show_lines=True,
             title_style="bold yellow",
@@ -115,7 +115,7 @@ def print_plan(plan: list, console=None) -> None:
             )
         console.print(table)
     else:
-        print("\n📋 Execution Plan:")
+        print("\nExecution Plan:")
         for step in plan:
             fb = step.get("fallback_tool") or "none"
             print(f"  [{step['step_id']}] {step['description'][:65]}")
@@ -129,7 +129,7 @@ def print_results(report_data: dict, console=None) -> None:
     if RICH_AVAILABLE and console:
         # Stats table
         table = Table(
-            title="📈 Execution Statistics",
+            title="Execution Statistics",
             box=box.ROUNDED,
             title_style="bold green",
         )
@@ -146,14 +146,14 @@ def print_results(report_data: dict, console=None) -> None:
         # Recovery events
         recovery = report_data.get("recovery_events", [])
         if recovery:
-            console.print("\n[bold yellow]🔄 Error Recovery Events:[/bold yellow]")
+            console.print("\n[bold yellow]Error Recovery Events:[/bold yellow]")
             for evt in recovery:
                 console.print(
                     f"  Step {evt['step_id']}: "
                     f"[bold]{evt['action']}[/bold] — {evt['reason'][:80]}"
                 )
     else:
-        print("\n📈 Execution Statistics:")
+        print("\nExecution Statistics:")
         for k, v in stats.items():
             print(f"  {k}: {v}")
 
@@ -163,9 +163,9 @@ def run_agent(goal: str, verbose: bool = False) -> dict:
     console = Console() if RICH_AVAILABLE else None
 
     if RICH_AVAILABLE and console:
-        console.print(f"\n[bold cyan]🎯 Goal:[/bold cyan] {goal}\n")
+        console.print(f"\n[bold cyan]Goal:[/bold cyan] {goal}\n")
     else:
-        print(f"\n🎯 Goal: {goal}\n")
+        print(f"\nGoal: {goal}\n")
 
     # Create and run agent
     agent = AgentOrchestrator(simulate_failure=True)
@@ -176,9 +176,9 @@ def run_agent(goal: str, verbose: bool = False) -> dict:
     print_plan(plan_dicts, console)
 
     if RICH_AVAILABLE and console:
-        console.print("\n[bold]⚙️  Executing plan…[/bold]\n")
+        console.print("\n[bold]Executing plan...[/bold]\n")
     else:
-        print("\n⚙️  Executing plan…\n")
+        print("\nExecuting plan...\n")
 
     # Execute
     report_data = agent.run(goal)
@@ -191,20 +191,20 @@ def run_agent(goal: str, verbose: bool = False) -> dict:
     paths = builder.save(report_data)
 
     if RICH_AVAILABLE and console:
-        console.print(f"\n[bold green]✅ Reports saved:[/bold green]")
-        console.print(f"   📄 Markdown: [link=file://{paths['markdown']}]{paths['markdown']}[/link]")
-        console.print(f"   📄 JSON:     [link=file://{paths['json']}]{paths['json']}[/link]")
+        console.print(f"\n[bold green]Reports saved:[/bold green]")
+        console.print(f"   Markdown: [link=file://{paths['markdown']}]{paths['markdown']}[/link]")
+        console.print(f"   JSON:     [link=file://{paths['json']}]{paths['json']}[/link]")
     else:
-        print(f"\n✅ Reports saved:")
-        print(f"   📄 Markdown: {paths['markdown']}")
-        print(f"   📄 JSON:     {paths['json']}")
+        print(f"\nReports saved:")
+        print(f"   Markdown: {paths['markdown']}")
+        print(f"   JSON:     {paths['json']}")
 
     return report_data
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="🤖 Agentic AI Research Agent — Autonomous Planning & Tool Use",
+        description="Agentic AI Research Agent — Autonomous Planning & Tool Use",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
