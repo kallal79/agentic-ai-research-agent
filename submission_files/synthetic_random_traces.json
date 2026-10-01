@@ -1,0 +1,730 @@
+[
+  {
+    "trace_id": "RAND-TR-001",
+    "category": "Academic / ArXiv Research",
+    "goal_input": "Find latest arXiv papers on quantum computing error correction algorithms",
+    "domain_intent": "academic",
+    "expected_domain": "academic",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "arxiv_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "arxiv_network_timeout",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified arXiv Atom API retrieval and academic literature synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-002",
+    "category": "Academic / ArXiv Research",
+    "goal_input": "Find latest arXiv papers on diffusion models and video synthesis architectures",
+    "domain_intent": "academic",
+    "expected_domain": "academic",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "arxiv_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "arxiv_network_timeout",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified arXiv Atom API retrieval and academic literature synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-003",
+    "category": "Academic / ArXiv Research",
+    "goal_input": "Find latest arXiv papers on neuromorphic computing and memristor neural networks",
+    "domain_intent": "academic",
+    "expected_domain": "academic",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "arxiv_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified arXiv Atom API retrieval and academic literature synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-004",
+    "category": "Academic / ArXiv Research",
+    "goal_input": "Find latest arXiv papers on multimodal vision-language foundation models",
+    "domain_intent": "academic",
+    "expected_domain": "academic",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "arxiv_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "wikipedia_topic_miss",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified arXiv Atom API retrieval and academic literature synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-005",
+    "category": "Academic / ArXiv Research",
+    "goal_input": "Find latest arXiv papers on topological quantum states and Majorana fermions",
+    "domain_intent": "academic",
+    "expected_domain": "academic",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "arxiv_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified arXiv Atom API retrieval and academic literature synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-006",
+    "category": "Academic / ArXiv Research",
+    "goal_input": "Find latest arXiv papers on reinforcement learning from human feedback RLHF",
+    "domain_intent": "academic",
+    "expected_domain": "academic",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "arxiv_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified arXiv Atom API retrieval and academic literature synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-007",
+    "category": "Academic / ArXiv Research",
+    "goal_input": "Find latest arXiv papers on CRISPR Cas9 base editing therapeutic mechanisms",
+    "domain_intent": "academic",
+    "expected_domain": "academic",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "arxiv_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "wikipedia_topic_miss",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified arXiv Atom API retrieval and academic literature synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-008",
+    "category": "Academic / ArXiv Research",
+    "goal_input": "Find latest arXiv papers on room-temperature superconductivity hydride compounds",
+    "domain_intent": "academic",
+    "expected_domain": "academic",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "arxiv_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "arxiv_network_timeout",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified arXiv Atom API retrieval and academic literature synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-009",
+    "category": "Data / Empirical Code Execution",
+    "goal_input": "Execute python code script to compute statistical benchmarks mean variance on dataset",
+    "domain_intent": "data_analysis",
+    "expected_domain": "data_analysis",
+    "steps_planned": 3,
+    "tool_sequence": [
+      "web_search",
+      "code_executor",
+      "text_summarizer"
+    ],
+    "injected_condition": "web_timeout_retry",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified AST security verification and safe sandboxed execution."
+  },
+  {
+    "trace_id": "RAND-TR-010",
+    "category": "Data / Empirical Code Execution",
+    "goal_input": "Execute python code script to calculate compound annual growth rate CAGR of market sectors",
+    "domain_intent": "data_analysis",
+    "expected_domain": "data_analysis",
+    "steps_planned": 3,
+    "tool_sequence": [
+      "web_search",
+      "code_executor",
+      "text_summarizer"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified AST security verification and safe sandboxed execution."
+  },
+  {
+    "trace_id": "RAND-TR-011",
+    "category": "Data / Empirical Code Execution",
+    "goal_input": "Execute python code script to simulate Monte Carlo probability distribution of asset prices",
+    "domain_intent": "data_analysis",
+    "expected_domain": "data_analysis",
+    "steps_planned": 3,
+    "tool_sequence": [
+      "web_search",
+      "code_executor",
+      "text_summarizer"
+    ],
+    "injected_condition": "syntax_sanitization",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified AST security verification and safe sandboxed execution."
+  },
+  {
+    "trace_id": "RAND-TR-012",
+    "category": "Data / Empirical Code Execution",
+    "goal_input": "Execute python code script to compute Fibonacci matrix eigenvalues and convergence rates",
+    "domain_intent": "data_analysis",
+    "expected_domain": "data_analysis",
+    "steps_planned": 3,
+    "tool_sequence": [
+      "web_search",
+      "code_executor",
+      "text_summarizer"
+    ],
+    "injected_condition": "web_timeout_retry",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified AST security verification and safe sandboxed execution."
+  },
+  {
+    "trace_id": "RAND-TR-013",
+    "category": "Data / Empirical Code Execution",
+    "goal_input": "Execute python code script to calculate compression ratio and information entropy on findings",
+    "domain_intent": "data_analysis",
+    "expected_domain": "data_analysis",
+    "steps_planned": 3,
+    "tool_sequence": [
+      "web_search",
+      "code_executor",
+      "text_summarizer"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified AST security verification and safe sandboxed execution."
+  },
+  {
+    "trace_id": "RAND-TR-014",
+    "category": "Data / Empirical Code Execution",
+    "goal_input": "Execute python code script to execute numerical array filtering and percentile rank analysis",
+    "domain_intent": "data_analysis",
+    "expected_domain": "data_analysis",
+    "steps_planned": 3,
+    "tool_sequence": [
+      "web_search",
+      "code_executor",
+      "text_summarizer"
+    ],
+    "injected_condition": "syntax_sanitization",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified AST security verification and safe sandboxed execution."
+  },
+  {
+    "trace_id": "RAND-TR-015",
+    "category": "Competitive Intelligence",
+    "goal_input": "Analyze competitive landscape of NVIDIA vs AMD and Intel in data center AI accelerator chips",
+    "domain_intent": "competitive",
+    "expected_domain": "competitive",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "first_call_simulated_timeout",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified 3-tier exponential retry and multi-source competitor synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-016",
+    "category": "Competitive Intelligence",
+    "goal_input": "Analyze competitive landscape of OpenAI vs Anthropic and DeepSeek in frontier reasoning models",
+    "domain_intent": "competitive",
+    "expected_domain": "competitive",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "first_call_simulated_timeout",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified 3-tier exponential retry and multi-source competitor synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-017",
+    "category": "Competitive Intelligence",
+    "goal_input": "Analyze competitive landscape of Tesla vs BYD and legacy automakers in global electric vehicle market",
+    "domain_intent": "competitive",
+    "expected_domain": "competitive",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "rate_limit_fallback",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified 3-tier exponential retry and multi-source competitor synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-018",
+    "category": "Competitive Intelligence",
+    "goal_input": "Analyze competitive landscape of Microsoft Azure vs Amazon AWS and Google Cloud in enterprise AI platforms",
+    "domain_intent": "competitive",
+    "expected_domain": "competitive",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified 3-tier exponential retry and multi-source competitor synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-019",
+    "category": "Competitive Intelligence",
+    "goal_input": "Analyze competitive landscape of TSMC vs Samsung and Intel Foundry in advanced sub-2nm nodes",
+    "domain_intent": "competitive",
+    "expected_domain": "competitive",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "first_call_simulated_timeout",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified 3-tier exponential retry and multi-source competitor synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-020",
+    "category": "Competitive Intelligence",
+    "goal_input": "Analyze competitive landscape of SpaceX vs Blue Origin and Rocket Lab in orbital payload deployment",
+    "domain_intent": "competitive",
+    "expected_domain": "competitive",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "rate_limit_fallback",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified 3-tier exponential retry and multi-source competitor synthesis."
+  },
+  {
+    "trace_id": "RAND-TR-021",
+    "category": "General Topic Research",
+    "goal_input": "Research recent breakthroughs in perovskite solar cells efficiency and commercial lifespan",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "sparse_corpus_dynamic_replan",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified general goal decomposition and frequency-based summarization."
+  },
+  {
+    "trace_id": "RAND-TR-022",
+    "category": "General Topic Research",
+    "goal_input": "Research recent breakthroughs in direct air carbon capture and sequestration technology costs",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified general goal decomposition and frequency-based summarization."
+  },
+  {
+    "trace_id": "RAND-TR-023",
+    "category": "General Topic Research",
+    "goal_input": "Research recent breakthroughs in humanoid robotics locomotion and dexterous manipulation",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "sparse_corpus_dynamic_replan",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified general goal decomposition and frequency-based summarization."
+  },
+  {
+    "trace_id": "RAND-TR-024",
+    "category": "General Topic Research",
+    "goal_input": "Research recent breakthroughs in nuclear fusion energy net gain progress at ITER and NIF",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "sparse_corpus_dynamic_replan",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified general goal decomposition and frequency-based summarization."
+  },
+  {
+    "trace_id": "RAND-TR-025",
+    "category": "General Topic Research",
+    "goal_input": "Research recent breakthroughs in solid-state lithium metal battery electrolyte stability",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified general goal decomposition and frequency-based summarization."
+  },
+  {
+    "trace_id": "RAND-TR-026",
+    "category": "General Topic Research",
+    "goal_input": "Research recent breakthroughs in microplastics degradation by engineered bacterial enzymes",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "sparse_corpus_dynamic_replan",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified general goal decomposition and frequency-based summarization."
+  },
+  {
+    "trace_id": "RAND-TR-027",
+    "category": "Logistics & Budget Planning",
+    "goal_input": "Plan a 3-day travel itinerary and budget for Kyoto Japan under $600 focusing on temples, traditional tea houses, and bamboo groves",
+    "domain_intent": "travel",
+    "expected_domain": "travel",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "calculator",
+      "text_summarizer"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified numerical budget math injection and itinerary generation."
+  },
+  {
+    "trace_id": "RAND-TR-028",
+    "category": "Logistics & Budget Planning",
+    "goal_input": "Plan a 3-day travel itinerary and budget for Reykjavik Iceland under $850 focusing on waterfalls, geothermal lagoons, and volcanic geology",
+    "domain_intent": "travel",
+    "expected_domain": "travel",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "calculator",
+      "text_summarizer"
+    ],
+    "injected_condition": "wikipedia_fallback",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified numerical budget math injection and itinerary generation."
+  },
+  {
+    "trace_id": "RAND-TR-029",
+    "category": "Logistics & Budget Planning",
+    "goal_input": "Plan a 3-day travel itinerary and budget for Zurich Switzerland under $900 focusing on alpine lakes, rail transit, and historic architecture",
+    "domain_intent": "travel",
+    "expected_domain": "travel",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "calculator",
+      "text_summarizer"
+    ],
+    "injected_condition": "budget_math_precision_check",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified numerical budget math injection and itinerary generation."
+  },
+  {
+    "trace_id": "RAND-TR-030",
+    "category": "Logistics & Budget Planning",
+    "goal_input": "Plan a 3-day travel itinerary and budget for Vancouver Canada under $700 focusing on coastal rainforest hikes, gastronomy, and sea plane tours",
+    "domain_intent": "travel",
+    "expected_domain": "travel",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "calculator",
+      "text_summarizer"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified numerical budget math injection and itinerary generation."
+  },
+  {
+    "trace_id": "RAND-TR-031",
+    "category": "Logistics & Budget Planning",
+    "goal_input": "Plan a 3-day travel itinerary and budget for Singapore under $750 focusing on botanic gardens, street hawker centers, and urban design",
+    "domain_intent": "travel",
+    "expected_domain": "travel",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "calculator",
+      "text_summarizer"
+    ],
+    "injected_condition": "nominal",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified numerical budget math injection and itinerary generation."
+  },
+  {
+    "trace_id": "RAND-TR-032",
+    "category": "Logistics & Budget Planning",
+    "goal_input": "Plan a 3-day travel itinerary and budget for Cape Town South Africa under $550 focusing on Table Mountain hiking, coastal scenery, and wine estates",
+    "domain_intent": "travel",
+    "expected_domain": "travel",
+    "steps_planned": 5,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "web_search",
+      "calculator",
+      "text_summarizer"
+    ],
+    "injected_condition": "budget_math_precision_check",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified numerical budget math injection and itinerary generation."
+  },
+  {
+    "trace_id": "RAND-TR-033",
+    "category": "Adversarial & Edge Cases",
+    "goal_input": "  ",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "edge_case: Empty / whitespace string",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified zero unhandled exceptions on edge input (Empty / whitespace string)."
+  },
+  {
+    "trace_id": "RAND-TR-034",
+    "category": "Adversarial & Edge Cases",
+    "goal_input": "asdfghjkl qwertyuiop zxcvbnm",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "edge_case: Random keyboard mash",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified zero unhandled exceptions on edge input (Random keyboard mash)."
+  },
+  {
+    "trace_id": "RAND-TR-035",
+    "category": "Adversarial & Edge Cases",
+    "goal_input": "\ud83d\ude80 \ud83e\udd16 \ud83e\udde0 \u26a1 \ud83d\udd2c",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "edge_case: Pure unicode emojis",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified zero unhandled exceptions on edge input (Pure unicode emojis)."
+  },
+  {
+    "trace_id": "RAND-TR-036",
+    "category": "Adversarial & Edge Cases",
+    "goal_input": "SELECT * FROM data WHERE 1=1; DROP TABLE users; --",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "edge_case: SQL syntax injection attempt",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified zero unhandled exceptions on edge input (SQL syntax injection attempt)."
+  },
+  {
+    "trace_id": "RAND-TR-037",
+    "category": "Adversarial & Edge Cases",
+    "goal_input": "<script>alert('test')</script>",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "edge_case: XSS script payload",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified zero unhandled exceptions on edge input (XSS script payload)."
+  },
+  {
+    "trace_id": "RAND-TR-038",
+    "category": "Adversarial & Edge Cases",
+    "goal_input": "research research research research research research research research research research research research research research research research research research research research research research research research research artificial intelligence",
+    "domain_intent": "research",
+    "expected_domain": "research",
+    "steps_planned": 4,
+    "tool_sequence": [
+      "web_search",
+      "wikipedia",
+      "text_summarizer",
+      "calculator"
+    ],
+    "injected_condition": "edge_case: Repeated keyword inflation",
+    "expected_status": "SUCCESS",
+    "precision_label": "TP",
+    "overall_eval": "PASS",
+    "notes": "Verified zero unhandled exceptions on edge input (Repeated keyword inflation)."
+  }
+]

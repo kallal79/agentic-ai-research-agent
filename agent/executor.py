@@ -107,6 +107,16 @@ class Executor:
             logger.error("Step %d: FAILED — %s", step.step_id, result.error_msg)
             return
 
+    def run_step(self, step: PlanStep, all_steps: List[PlanStep]) -> PlanStep:
+        """Execute a single dynamically injected step."""
+        self._execute_step(step, all_steps)
+        return step
+
+    @property
+    def collected_text(self) -> List[str]:
+        """Return a copy of the gathered raw text corpus."""
+        return list(self._collected_text)
+
     # ---- dynamic data injection ------------------------------------------------
 
     def _prepare_kwargs(self, step: PlanStep, all_steps: List[PlanStep]) -> Dict[str, Any]:
@@ -151,6 +161,20 @@ class Executor:
         if isinstance(data, str):
             self._collected_text.append(data)
         elif isinstance(data, dict):
+            # ArXiv paper findings
+            if "papers" in data and isinstance(data["papers"], list):
+                for p in data["papers"]:
+                    if isinstance(p, dict):
+                        parts = []
+                        if p.get("title"):
+                            parts.append(p["title"])
+                        if p.get("summary"):
+                            parts.append(p["summary"])
+                        if parts:
+                            self._collected_text.append(". ".join(parts))
+            # Code executor results
+            if "output" in data and data["output"]:
+                self._collected_text.append(f"Code Output: {data['output']}")
             # Wikipedia-style result
             if "summary" in data:
                 self._collected_text.append(data["summary"])
@@ -160,7 +184,7 @@ class Executor:
                     f"Calculation: {data['expression']} = {data['result']}"
                 )
         elif isinstance(data, list):
-            # Web search results
+            # Web search or ArXiv papers
             for item in data:
                 if isinstance(item, dict):
                     parts = []
@@ -168,6 +192,8 @@ class Executor:
                         parts.append(item["title"])
                     if item.get("snippet"):
                         parts.append(item["snippet"])
+                    if item.get("summary"):
+                        parts.append(item["summary"])
                     if parts:
                         self._collected_text.append(". ".join(parts))
 
